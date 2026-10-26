@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7efe3">
+  <meta name="description" content="Eine geheimnisvolle Geburtstagseinladung für Mami.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Ein kleines Geheimnis für Mami ♥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-left" aria-hidden="true"></div><div class="ambient ambient-right" aria-hidden="true"></div>
+  <header class="topbar"><a class="brand" href="#home" id="brand" aria-label="Zurück zum Anfang"><span class="brand-seal">✦</span> für Mami</a><span class="top-note">Ein Geburtstagsgeheimnis · 26. Oktober 2026</span></header>
+  <main class="shell" id="home">
+    <p class="eyebrow"><span></span> EIN KLEINER PLAN NUR FÜR UNS <span></span></p>
+    <div class="progress" aria-label="Fortschritt"><span class="progress-fill" id="progress-fill"></span></div>
+
+    <section class="step" id="invite-step" aria-labelledby="invite-title">
+      <div class="hero-layout card">
+        <div class="hero-copy">
+          <span class="pill">✉️ &nbsp;Für Martina, von Herzen</span>
+          <h1 id="invite-title" tabindex="-1">Alles Gute zum <em>57.</em> Geburtstag, Mami!</h1>
+          <p class="lead">Dieses Jahr schenke ich dir etwas, das wir zusammen erleben. Wohin es geht, bleibt vorerst mein Geheimnis. Wenn du magst, kannst du vorher eine kleine Geheimakte knacken …</p>
+          <button class="button button-primary" id="start-button" type="button">Das Geheimnis öffnen <span aria-hidden="true">↗</span></button>
+          <p class="small-note">Ein Nachmittag. Ein Abend. Ein kleines Abenteuer zu zweit.</p>
+        </div>
+        <div class="hero-art" role="img" aria-label="Geheimnisvoller Schlüssel vor herbstlichen Blättern und warmen Lichtern">
+          <span class="art-star star-one">✦</span><span class="art-star star-two">✧</span><span class="art-star star-three">✦</span>
+          <div class="art-orbit"></div><div class="art-disk"></div><span class="art-key">⚿</span>
+          <span class="leaf leaf-one">🍂</span><span class="leaf leaf-two">🍁</span><span class="leaf leaf-three">🍂</span>
+          <span class="art-ribbon">KAPITEL 57</span><span class="art-caption">Ein Tag voller Geheimnisse &amp; Lichter</span>
+        </div>
+      </div>
+      <div class="promise-strip"><div><span>01</span><strong>Tage aussuchen</strong><small>Zwischen November und Dezember</small></div><div><span>02</span><strong>Die Akte öffnen</strong><small>Drei Aufgaben warten auf dich</small></div><div><span>03</span><strong>Das Schloss knacken</strong><small>Der Plan bleibt noch geheim</small></div></div>
+    </section>
+
+    <section class="step" id="date-step" aria-labelledby="date-title" hidden>
+      <div class="step-heading">01 / 03 <span>DER ZEITPUNKT</span></div>
+      <div class="section-grid card"><div class="section-copy"><span class="pill">📅 &nbsp;Erste Spur</span><h2 id="date-title" tabindex="-1">Wann darf ich dich <em>entführen?</em></h2><p class="lead">Such dir einen oder mehrere Tage zwischen dem <strong>20. November und 23. Dezember 2026</strong> aus. Halte dir an diesen Tagen bitte <strong>Nachmittag und Abend</strong> frei.</p><div class="aside-note"><span>✦</span> Je näher der Abend rückt, desto mehr Lichter werden uns begegnen.</div></div>
+        <div class="panel"><div class="panel-header"><span>DEINE WUNSCHTAGE</span><span>✦</span></div><label for="date-picker" class="input-label">Welche Tage passen dir?</label><div class="date-add-row"><input id="date-picker" type="date" min="2026-11-20" max="2026-12-23" class="date-input" aria-describedby="date-help date-error"><button class="button button-secondary" id="add-date" type="button">Tag hinzufügen</button></div><p class="helper" id="date-help">20.11. bis 23.12.2026 · Nachmittag + Abend pro Tag</p><div class="selected-date-heading">Ausgewählt <span id="date-count">0 Tage</span></div><ul class="selected-dates" id="selected-dates" aria-live="polite"><li class="selected-dates-empty">Noch keine Tage ausgewählt.</li></ul><p class="error" id="date-error" role="alert"></p><div class="panel-footer"><button class="text-button" type="button" data-back="invite">← Zurück</button><button class="button button-primary" id="date-next" type="button">Weiter zu den Spuren <span aria-hidden="true">→</span></button></div></div>
+      </div>
+    </section>
+
+    <section class="step" id="clues-step" aria-labelledby="clues-title" hidden>
+      <div class="step-heading">02 / 03 <span>DIE SPUREN</span></div>
+      <div class="section-grid card"><div class="section-copy"><span class="pill">🔎 &nbsp;Geheimakte 57</span><h2 id="clues-title" tabindex="-1">Drei Siegel. <em>Ein Zahlenschloss.</em></h2><p class="lead">Hinter jedem Siegel steckt eine Zahl. Finde sie heraus und setze die drei Ziffern in der Reihenfolge A, B, C zusammen.</p><div class="aside-note"><span>✦</span> Die Aufgaben verraten dir den Code, aber nicht, wohin wir gehen.</div></div>
+        <div class="panel"><div class="panel-header"><span>VERSIEGELTE AKTE</span><span id="clue-counter">0 / 3</span></div><div class="clue-grid">
+          <button class="clue-card" type="button" aria-expanded="false" data-clue="Die Uhr geht zwei Schritte vor: PGWP." ><span class="clue-number">SIEGEL A</span><span class="clue-symbol">⌛</span><strong>Die Uhr</strong><small>Antippen zum Aufdecken</small></button>
+          <button class="clue-card" type="button" aria-expanded="false" data-clue="Auf der Waage: XII : III" ><span class="clue-number">SIEGEL B</span><span class="clue-symbol">⚖</span><strong>Die Waage</strong><small>Antippen zum Aufdecken</small></button>
+          <button class="clue-card" type="button" aria-expanded="false" data-clue="Im Regal: 19 · 5 · 3 · 8 · 19" ><span class="clue-number">SIEGEL C</span><span class="clue-symbol">✉</span><strong>Das Register</strong><small>Antippen zum Aufdecken</small></button>
+        </div><div class="panel-footer"><button class="text-button" type="button" data-back="date">← Zurück</button><button class="button button-primary" id="clues-next" type="button">Zum Zahlenschloss <span aria-hidden="true">→</span></button></div></div>
+      </div>
+    </section>
+
+    <section class="step" id="riddle-step" aria-labelledby="riddle-title" hidden>
+      <div class="step-heading">03 / 03 <span>DAS ZAHLENSCHLOSS</span></div>
+      <div class="section-grid card"><div class="section-copy"><span class="pill">🗝 &nbsp;Fast geschafft</span><h2 id="riddle-title" tabindex="-1">Knackst du den <em>Code?</em></h2><p class="lead">Jedes Siegel ergibt eine Ziffer. Gib sie in der Reihenfolge A–B–C ein. Was wir tatsächlich machen, verrate ich dir auch danach noch nicht.</p><div class="aside-note"><span>✦</span> Du kannst hier aufschreiben, was du vermutest. Deine Notiz wird nicht bewertet.</div></div>
+        <div class="panel"><div class="panel-header"><span>ZAHLENSCHLOSS</span><span>✦</span></div><label class="input-label" for="lock-code">Dreistelliger Code · A–B–C</label><input class="date-input lock-input" id="lock-code" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" placeholder="_ _ _"><label class="input-label" for="guess-note">Meine Vermutung <span class="optional">(freiwillig)</span></label><textarea class="date-input note-input" id="guess-note" rows="3" maxlength="500" placeholder="Ich glaube, wir werden …"></textarea><p class="helper">Die Notiz bleibt auf diesem Gerät gespeichert.</p><p class="error" id="riddle-message" role="status"></p><button class="hint-button" id="hint-button" type="button">Ich brauche einen Tipp</button><p class="hint-text" id="hint-text" hidden></p><div class="panel-footer"><button class="text-button" type="button" data-back="clues">← Zurück</button><button class="button button-primary" id="solve-button" type="button">Schloss öffnen <span aria-hidden="true">✦</span></button></div></div>
+      </div>
+    </section>
+
+    <section class="step finale" id="final-step" aria-labelledby="final-title" hidden><div class="final-sparkle">✦</div><span class="pill">Akte 57 · Schloss geöffnet</span><h2 id="final-title" tabindex="-1">Gut kombiniert, <em>Mami!</em></h2><p class="final-lead">Du hast das Zahlenschloss geknackt. Der eigentliche Geburtstagsplan bleibt noch unter Verschluss – ich freue mich schon auf unseren gemeinsamen Nachmittag und Abend.</p><div class="sealed-plan"><span aria-hidden="true">✉</span><div><strong>Was steckt in diesem Umschlag?</strong><small>Das erfährst du, wenn wir losziehen.</small></div></div><p class="saved-guess" id="saved-guess" hidden></p><div class="chosen-date" id="chosen-date"></div><p class="small-note">Wenn du auf „Abschicken“ tippst, bekomme ich deine Wunschtage und deine freiwillige Vermutung per E-Mail. Wir stimmen den Termin danach gemeinsam ab.</p><div class="final-actions"><button class="button button-primary" id="submit-button" type="button">Wunschtage abschicken <span aria-hidden="true">✉</span></button><button class="text-button" id="change-date" type="button">Tage ändern</button><button class="text-button" id="change-note" type="button">Notiz ändern</button></div><p id="submit-error" class="error" role="alert"></p><button class="text-button" id="share-button" type="button">Alternativ als Nachricht teilen</button><p id="share-status" class="helper" role="status"></p><p class="signature">Alles Liebe zum Geburtstag, Mami ♥</p></section>
+    <section class="step finale" id="sent-step" aria-labelledby="sent-title" hidden><div class="final-sparkle">✉</div><span class="pill">Nachricht verschickt</span><h2 id="sent-title" tabindex="-1">Danke, <em>Mami!</em></h2><p class="final-lead">Deine Wunschtage wurden abgeschickt. Ich suche den passenden Termin aus und melde mich bei dir. Das Geheimnis bleibt bis dahin bestehen.</p><div class="chosen-date" id="sent-dates"></div><p class="signature">Ich freue mich auf unseren Tag ♥</p></section>
+  </main>
+  <footer class="footer">Kapitel 57 beginnt jetzt.</footer>
+</body>
+</html>
