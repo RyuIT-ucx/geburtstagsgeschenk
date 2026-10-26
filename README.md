@@ -10,7 +10,7 @@ Die Seite ist eine statische Website mit `index.html`, `styles.css`, `app.js` un
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Veröffentlicht über GitHub Pages unter `https://ryuit-ucx.github.io/mamis-geburtstagsgeschenk/`.
+Veröffentlicht über GitHub Pages unter `https://ryuit-ucx.github.io/geburtstagsgeschenk/`.
 
 ## Wunschtage per E-Mail
 
